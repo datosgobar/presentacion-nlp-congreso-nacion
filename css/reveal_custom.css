@@ -8,8 +8,14 @@
 
 }
 
-.reveal h1 {
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
   text-transform: none;
+}
+
+.reveal h1 {
   font-size: 1.5em;
 }
 
@@ -54,4 +60,15 @@
   color: white;
   font-size: 0.9em;
   font-weight: bold;
+}
+
+.reveal .social-link {
+  display: inline-block;
+  width: 200px;
+  margin: 0 30px;
+}
+
+.reveal .social-link p {
+  font-weight: bold;
+  margin: 0 0 20px 0;
 }
