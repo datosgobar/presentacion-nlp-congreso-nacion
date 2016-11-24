@@ -5,14 +5,20 @@
 
 .reveal .team-avatar {
   display: inline-block;
+  margin: 0 30px;
+}
+
+.reveal .team-avatar .avatar-background {
+  display: inline-block;
   max-width: 300px;
   background-image: url('../assets/equipo-fondo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  padding: 5px 0 0 5px;
 }
 
-.reveal .team-avatar img {
+.reveal .team-avatar .avatar-background img {
   margin: 0;
   border: none;
   background: transparent;
@@ -20,4 +26,18 @@
   width: 100%;
   max-width: 100%;
   max-height: 100%;
+}
+
+.reveal .team-avatar .name {
+  font-size: 0.8em;
+  line-height: 1;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.reveal .team-avatar .position {
+  font-size: 0.6em;
+  line-height: 1;
+  margin: 8px 0;
+  opacity: 0.8;
 }
