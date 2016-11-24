@@ -1,0 +1,23 @@
+.reveal h1 {
+  text-transform: none;
+  font-size: 1.5em;
+}
+
+.reveal .team-avatar {
+  display: inline-block;
+  max-width: 300px;
+  background-image: url('../assets/equipo-fondo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.reveal .team-avatar img {
+  margin: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
