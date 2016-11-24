@@ -1,3 +1,13 @@
+.reveal section img {
+  margin: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
 .reveal h1 {
   text-transform: none;
   font-size: 1.5em;
@@ -19,13 +29,7 @@
 }
 
 .reveal .team-avatar .avatar-background img {
-  margin: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
   width: 100%;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .reveal .team-avatar .name {
@@ -40,4 +44,14 @@
   line-height: 1;
   margin: 8px 0;
   opacity: 0.8;
+}
+
+.reveal .team-mission img {
+  width: 500px;
+}
+
+.reveal .team-mission p {
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
 }
