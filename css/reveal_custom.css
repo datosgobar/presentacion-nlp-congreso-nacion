@@ -137,3 +137,9 @@
 .reveal .text-cloud img {
   height: 80%;
 }
+
+.reveal .separables {
+  display: inline-block;
+  margin: 0 auto;
+  width: 33%;
+}
