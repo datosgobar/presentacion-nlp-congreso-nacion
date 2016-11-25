@@ -114,3 +114,10 @@
 .reveal .libs-used .poncho {
   background-image: url('../assets/poncho.gif');
 }
+
+.reveal pre {
+  box-shadow: none;
+  font-size: 0.8em;
+  width: 600px;
+  font-weight: bold;
+}
