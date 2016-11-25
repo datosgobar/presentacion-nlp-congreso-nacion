@@ -133,3 +133,7 @@
   right: 100px;
   width: 300px;
 }
+
+.reveal .text-cloud img {
+  height: 80%;
+}
