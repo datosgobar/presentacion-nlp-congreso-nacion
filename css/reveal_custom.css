@@ -143,3 +143,14 @@
   margin: 0 auto;
   width: 33%;
 }
+
+.reveal .svm-categorization {
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.reveal .svm-categorization img {
+  border: solid 2px white;
+  border-radius: 4px;
+  margin: 0 25px;
+}
