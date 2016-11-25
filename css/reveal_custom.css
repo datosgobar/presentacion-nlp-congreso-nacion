@@ -121,3 +121,15 @@
   width: 600px;
   font-weight: bold;
 }
+
+.reveal .distance {
+  padding-right: 300px;
+  position: relative;
+}
+
+.reveal .distance p {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 300px;
+}
