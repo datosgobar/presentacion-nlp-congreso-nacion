@@ -72,3 +72,45 @@
   font-weight: bold;
   margin: 0 0 20px 0;
 }
+
+.reveal .libs-used div {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reveal .libs-used .sklearn {
+  background-image: url('../assets/sklearn.png');
+}
+
+.reveal .libs-used .numpy {
+  background-image: url('../assets/numpy.png');
+}
+
+.reveal .libs-used .scipy {
+  background-image: url('../assets/scipy.png');
+}
+
+.reveal .libs-used .pandas {
+  background-image: url('../assets/pandas.png');
+}
+
+.reveal .libs-used .matplotlib {
+  background-image: url('../assets/matplotlib.png');
+}
+
+.reveal .libs-used .flask {
+  background-image: url('../assets/flask.png');
+}
+
+.reveal .libs-used .sqlite {
+  background-image: url('../assets/sqlite.png');
+}
+
+.reveal .libs-used .poncho {
+  background-image: url('../assets/poncho.gif');
+}
