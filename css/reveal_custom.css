@@ -154,3 +154,17 @@
   border-radius: 4px;
   margin: 0 25px;
 }
+
+.reveal .pip-example {
+  font-size: 0.45em;
+  width: 960px;
+  white-space: pre-wrap;
+}
+
+.reveal .pip-example code {
+  max-height: 100%;
+}
+
+.reveal .second-pip-example {
+  font-size: 0.55em;
+}

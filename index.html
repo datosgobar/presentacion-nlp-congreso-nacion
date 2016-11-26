@@ -252,6 +252,77 @@ $ python
                         </strong>
                     </p> 
                 </section>
+                <section data-background-color="rgb(0,133,219)" data-background-size="cover" data-background-image="./assets/codigo.png">
+                    <h3>Busqueda por similitud</h3>
+                    <pre class="pip-example"><code>tc = TextClassifier(
+    texts=[
+        "El árbol del edificio moderno tiene manzanas",
+        "El árbol más chico tiene muchas mandarinas naranjas, y está cerca del monumento antiguo",
+        "El edificio más antiguo tiene muchas cuadros caros porque era de un multimillonario",
+        "El edificio más moderno tiene muchas programadoras que comen manzanas durante el almuerzo grupal"
+    ],
+    ids=map(str, range(4))
+)
+
+ids, distancias, palabras_comunes = tc.get_similar(
+    example="Me encontré muchas manzanas en el edificio", 
+    max_similars=4
+)
+
+print ids
+['0', '3', '2', '1']
+
+print distancias
+[0.92781458944579009, 1.0595805639371083, 1.1756638126839645, 1.3206413200640157]
+
+print palabras_comunes
+[[u'edificio', u'manzanas'], [u'edificio', u'muchas', u'manzanas'], [u'edificio', u'muchas'], [u'muchas']]</code></pre>
+                </section>
+                <section data-background-color="rgb(0,133,219)" data-background-size="cover" data-background-image="./assets/codigo.png">
+                    <h3>Categorización de textos</h3>
+                    <pre class="pip-example second-pip-example"><code>tc = TextClassifier(
+    texts=[
+        "Para hacer una pizza hace falta harina, tomate, queso y jamón",
+        "Para hacer unas empanadas necesitamos tapas de empanadas, tomate, jamón y queso",
+        "Para hacer un daiquiri necesitamos ron, una fruta y un poco de limón",
+        "Para hacer un cuba libre necesitamos coca, ron y un poco de limón",
+        "Para hacer una torta de naranja se necesita harina, huevos, leche, ralladura de naranja y polvo de hornear",
+        "Para hacer un lemon pie se necesita crema, ralladura de limón, huevos, leche y harina"
+    ],
+    ids=map(str, range(6))
+)
+
+# entrena un clasificador
+tc.make_classifier(
+    name="recetas_classifier",
+    ids=map(str, range(6)),
+    labels=["Comida", "Comida", "Trago", "Trago", "Postre", "Postre"]
+)</code></pre>
+                </section>
+                <section data-background-color="rgb(0,133,219)" data-background-size="cover" data-background-image="./assets/codigo.png">
+                    <h3>Categorización de textos</h3>
+                    <pre class="pip-example second-pip-example"><code>labels_considerados, puntajes = tc.classify(
+    classifier_name="recetas_classifier", 
+    examples=[
+        "Para hacer un bizcochuelo de chocolate se necesita harina, huevos, leche y chocolate negro",
+        "Para hacer un sanguche de miga necesitamos pan, jamón y queso"
+    ]
+)
+
+print labels_considerados
+array(['Comida', 'Postre', 'Trago'], dtype='|S6')
+
+print puntajes
+array([[-3.52,  5.85, -6.05], [2.80, -6.55, -3.39]])
+
+# el primer ejemplo es un postre
+print sorted(zip(puntajes[0], labels_considerados), reverse=True)
+[(5.85, 'Postre'), (-3.52, 'Comida'), (-6.05, 'Trago')]
+
+# el segundo ejemplo es una comida
+print sorted(zip(puntajes[1], labels_considerados), reverse=True)
+[(2.80, 'Comida'), (-3.39, 'Trago'), (-6.55, 'Postre')]</code></pre>
+                </section>
                 <section data-background-color="rgb(0,133,219)" data-background-size="cover" data-background-image="./assets/fondo_01.png">
                     <h2>
                         Nos pueden encontrar en
