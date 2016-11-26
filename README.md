@@ -17,6 +17,10 @@ Esta presentación fue expuesta en la conferencia [PyConAr 2016](http://ar.pycon
 - Paquete de Pip con código reutilizable
 - Links de interes
 
+# Paquete de Pip
+
+El codigo detras de la herramienta está disponible como un [paquete de Pip](https://github.com/datosgobar/textar)
+
 # Herramientas usadas
 
 ## Para la presentación
