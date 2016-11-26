@@ -202,3 +202,7 @@
   list-style: none;
   list-style-type: none;
 }
+
+.reveal .presentation-link {
+  font-size:0.9em;
+}
